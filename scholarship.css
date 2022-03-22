@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+/* header start*/
+
+/* nav start */
+
+.navcontainer{
+    background-color: rgb(228, 203, 203);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 5rem;
+ 
+}
+
+.navlogo img{
+    height: 3rem;
+    padding-right: 25rem;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: rgb(78, 70, 70);
+    padding: 2rem;
+}
+
+/*  */
+/* home page CSS starts */
+
+.containerHome1{
+    background-image: url(/banner.png); height: 80rem;
+    background-size: cover; background-repeat: no-repeat; 
+    
+    
+    /* background-position: center;   */
+}
+
+/* criteria page starts */
+.h1{
+    background-color: rgba(223, 203, 203, 0.897);
+    padding: 1rem;
+}
+h1{
+    width: 75%;
+    margin: auto;
+    font-size: 2.5rem;
+    
+}
+
+.criteria{
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+    padding: 3rem;
+    background-image: url(/basketball.png); height: 100%;
+    background-size: cover; background-repeat: no-repeat; background-position: top;
+}
+
+input, select{
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.one1 input, .two2 input , .three3 input, .four4 input, .five5 select, .six6 select, .seven7 select, .eight8 select{
+    padding: 22px 150px;
+}
+
+.grade1 input, .grade2 input, .grade3 input, .grade3 select, .grade4 input, .grade4 select, .grade5 input, .grade5 select, .grade6 input, .grade6 select, .grade7 input, .grade7 select, .grade8 input, .grade8 select{
+    padding: 22px 150px;
+    border-radius: 10px;  
+}
+
+
+label{
+    color: red;
+}
+
+button{
+    background-color:blue;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+}
+/* criteria page ends */
+
+/* media Query start */
+
+@media (max-width:1100px) {
+
+    .navbar {
+        display: flex;
+        width: 85%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+
+
+    .text {
+        /* padding-left: 25rem; */
+        flex-grow: 1;
+        align-items: center;
+    }
+
+
+
+    .criteria{
+        display:block
+        
+}
+.one1 input, .two2 input , .three3 input, .four4 input, .five5 select, .six6 select, .seven7 select, .eight8 select{
+    margin: 1.5rem;
+}
+
+.grade1, .grade2, .grade3, .grade4, .grade5, .grade6, .grade7, .grade8{
+    padding: 12px 15px;
+    border-radius: 10px;  
+  
+}
+.navlinks{
+    margin-left: -15rem;
+}
+
+}
+
+@media (max-width:782px) {
+    .navlinks{
+        margin-left: -25rem;
+    }
+        
+.grade1, .grade2, .grade3, .grade4, .grade5, .grade6, .grade7, .grade8{
+    padding: 12px 15px;
+  
+  
+}
+
+.one1, .two2 , .three3, .four4, .five5, .six6, .seven7, .eight8{
+    padding: 12px 15px;
+}
+
+.one1 input, .two2 input , .three3 input, .four4 input, .five5 select, .six6 select, .seven7 select, .eight8 select{
+    padding: 12px 15px;
+}
+
+.grade1 input, .grade2 input, .grade3 input, .grade3 select, .grade4 input, .grade4 select, .grade5 input, .grade5 select, .grade6 input, .grade6 select, .grade7 input, .grade7 select, .grade8 input, .grade8 select{
+    padding: 12px 15px;
+    border-radius: 10px;  
+}
+
+
+
+
+}
+
+@media (max-width:580px) {
+    .navlinks{
+        margin-left: -15rem;
+    }
+
+    .navlogo img{
+        height: 3rem;
+        padding-right: 15rem;
+    }
+
+
+}
+@media (max-width:519px) {
+    .navlinks{
+        margin-left: -15rem;
+    }
+    .navlinks a{
+        padding: 0.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query ends */
+
+
+/* 
+@media (max-width:1100px) {
+.criteria{
+        display:block
+        
+}
+.grade1, .grade2, .grade3, .grade4, .grade5, .grade6, .grade7, .grade8{
+    padding: 22px 150px;
+    border-radius: 10px;  
+}
+.one1 input, .two2 input , .three3 input, .four4 input, .five5 select, .six6 select, .seven7 select, .eight8 select{
+    margin: 1.5rem;
+}
+
+}
+
+@media (max-width:900px) {
+    .left a{
+        text-decoration: none;
+        color: rgb(78, 70, 70);
+        padding: 2rem;
+       
+        
+    }
+    
+}
+@media (max-width:764px) {
+    .left a{
+        text-decoration: none;
+        color: rgb(78, 70, 70);
+        padding: 1rem;
+       
+        
+    }
+}
+
+@media (max-width:690px) {
+
+
+.grade1, .grade2, .grade3, .grade4, .grade5, .grade6, .grade7, .grade8{
+    padding: 12px 15px;
+    border-radius: 10px;  
+  
+}
+
+.one1, .two2 , .three3, .four4, .five5, .six6, .seven7, .eight8{
+    padding: 12px 15px;
+}
+
+.one1 input, .two2 input , .three3 input, .four4 input, .five5 select, .six6 select, .seven7 select, .eight8 select{
+    padding: 12px 15px;
+}
+
+.grade1 input, .grade2 input, .grade3 input, .grade3 select, .grade4 input, .grade4 select, .grade5 input, .grade5 select, .grade6 input, .grade6 select, .grade7 input, .grade7 select, .grade8 input, .grade8 select{
+    padding: 12px 15px;
+    border-radius: 10px;  
+}
+
+
+
+} */
+
+
+
